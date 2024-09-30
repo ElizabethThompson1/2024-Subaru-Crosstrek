@@ -1,0 +1,75 @@
+{
+    "trims": {
+      "base": {
+        "title": "Base",
+        "price": "$25,195",
+        "mpg": "34/27 (Hwy/City)",
+        "features": [
+          "Symmetrical All-Wheel Drive",
+          "Standard EyeSight® Driver Assist Technology",
+          "8.7 inches of ground clearance",
+          "STARLINK Multimedia with Apple CarPlay® and Android Auto™ integration",
+          "17-inch dark gray-finish alloy wheels",
+          "Dual-zone automatic climate control"
+        ],
+        "image": "images/colors/Alpine Green.png"
+      },
+      "premium": {
+        "title": "Premium",
+        "price": "$26,345",
+        "mpg": "34/27 (Hwy/City)",
+        "features": [
+          "Raised roof rails",
+          "Keyless Access with Push-Button Start",
+          "SUBARU STARLINK® Safety & Security",
+          "SUBARU STARLINK® 11.6-inch Multimedia Plus",
+          "LED fog lights",
+          "Available power moonroof"
+        ],
+        "image": "images/colors/Geyser Blue.png"
+      },
+      "sport": {
+        "title": "Sport",
+        "price": "$29,195",
+        "mpg": "33/26 (Hwy/City)",
+        "features": [
+          "182-hp 2.5-liter SUBARU BOXER® engine",
+          "Dual-function X-MODE® with Hill Descent Control",
+          "Yellow-finish exterior accents",
+          "Leather-wrapped steering wheel",
+          "18-inch dark gray-finish alloy wheels",
+          "All-Weather Package with heated front seats"
+        ],
+        "image": "images/colors/Offshore Blue Metallic.png"
+      },
+      "limited": {
+        "title": "Limited",
+        "price": "$31,095",
+        "mpg": "33/26 (Hwy/City)",
+        "features": [
+          "Leather-trimmed upholstery",
+          "Blind-Spot Detection/Rear Cross-Traffic Alert and Reverse Automatic Braking",
+          "18-inch dark gray with machine-finish alloy wheels",
+          "10-way power adjustable driver's seat",
+          "Available power moonroof",
+          "Available Harman Kardon® premium audio system"
+        ],
+        "image": "images/colors/Crystal White Pearl.png"
+      },
+      "wilderness": {
+        "title": "Wilderness",
+        "price": "$32,195",
+        "mpg": "29/25 (Hwy/City)",
+        "features": [
+          "Raised suspension with 9.3 inches of ground clearance",
+          "182-hp 2.5-liter SUBARU BOXER® engine",
+          "17-inch matte black-finish wheels and Yokohama GEOLANDAR® all-terrain tires",
+          "StarTex® water-repellent upholstery and Anodized Copper-finish interior accents",
+          "Unique front and rear bumpers with integrated tow points and extended lower cladding",
+          "3,500-lb. towing capacity"
+        ],
+        "image": "images/colors/Sun Blaze Pearl.png"
+      }
+    }
+  }
+  
