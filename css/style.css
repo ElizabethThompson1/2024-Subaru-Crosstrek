@@ -1,0 +1,578 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#navbar {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+#navbar .navbar-brand,
+#navbar .nav>li>a {
+    color: white;
+}
+
+#navbar .nav>li>a:hover {
+    background-color: #0072bb;
+    color: white;
+}
+
+/* Header Section */
+#header {
+    position: relative;
+    height: 100vh;
+    background-color: #1d1d1d;
+    color: white;
+}
+
+.header-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    text-align: center;
+}
+
+#header h1 {
+    font-size: 4em;
+}
+
+#header p {
+    font-size: 1.5em;
+}
+
+#header .btn-primary {
+    margin-top: 20px;
+}
+
+/* Image Fade Effect */
+.image-fade-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.header-image {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.header-image.active {
+    opacity: 1;
+}
+
+/* Feature Section */
+.feature-item {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.feature-image-container {
+    position: relative;
+}
+
+.feature-image-container img {
+    width: 100%;
+    height: 250px; /* Ensures all images are the same height */
+    object-fit: cover; /* Ensures the image fills the container while maintaining aspect ratio */
+    transition: transform 0.3s ease;
+}
+
+.feature-item h3 {
+    margin-top: 15px;
+    font-size: 1.5rem;
+}
+
+.feature-item p {
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+.feature-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    transition: opacity 0.3s ease;
+    text-align: center;
+}
+
+.feature-item:hover img {
+    transform: scale(1.1);
+}
+
+.feature-item:hover .feature-overlay {
+    opacity: 1;
+}
+
+
+
+/* Slider Style */
+.slider-container {
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40%;
+    padding: 0 20px;
+}
+
+/* Range Input */
+input[type="range"] {
+    -webkit-appearance: none;
+    width: 100%;
+    background: transparent;
+}
+
+/* Slider Track */
+input[type="range"]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 12px;
+    background: #333;
+    border: 1px solid #555;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+}
+
+input[type="range"]::-moz-range-track {
+    width: 100%;
+    height: 12px;
+    background: #333;
+    border: 1px solid #555;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+}
+
+input[type="range"]::-ms-track {
+    width: 100%;
+    height: 12px;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+}
+
+/* Slider Thumb */
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 42px;
+    height: 24px;
+    background: #0072bb;
+    border-radius: 40%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    border: 2px solid #fff;
+    transition: background 0.3s ease;
+}
+
+input[type="range"]::-moz-range-thumb {
+    width: 24px;
+    height: 24px;
+    background: #0072bb;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    border: 2px solid #fff;
+    transition: background 0.3s ease;
+}
+
+input[type="range"]::-ms-thumb {
+    width: 24px;
+    height: 24px;
+    background: #0072bb;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    border: 2px solid #fff;
+    transition: background 0.3s ease;
+}
+
+/* Thumb Hover Effect */
+input[type="range"]::-webkit-slider-thumb:hover {
+    background: #005ea2;
+}
+
+input[type="range"]::-moz-range-thumb:hover {
+    background: #005ea2;
+}
+
+input[type="range"]::-ms-thumb:hover {
+    background: #005ea2;
+}
+
+/* Focus and Active State */
+input[type="range"]:focus::-webkit-slider-thumb {
+    background: #005ea2;
+}
+
+input[type="range"]:focus::-moz-range-thumb {
+    background: #005ea2;
+}
+
+input[type="range"]:focus::-ms-thumb {
+    background: #005ea2;
+}
+
+/* Color Section */
+#colors {
+    padding: 50px 0;
+    
+}
+
+#colors h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.color-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.car-image-container {
+    flex: 1;
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.car-image-container img {
+    max-width: 100%;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.color-selector {
+    flex: 1;
+    max-width: 30%;
+}
+
+.color-selector ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.color-selector ul li {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.color-selector ul li:hover {
+    transform: scale(1.2);
+}
+
+.color-selector ul li.active {
+    border: 3px solid #0072bb;
+    box-shadow: 0 0 15px rgba(0, 114, 187, 0.6);
+}
+
+@media (max-width: 768px) {
+    .color-section {
+        flex-direction: column;
+    }
+
+    .car-image-container {
+        max-width: 100%;
+    }
+
+    .color-selector {
+        max-width: 100%;
+    }
+}
+
+.trim-section {
+    padding: 50px 0;
+    background-color: #f4f4f4;
+    text-align: center;
+    margin: 30px 0;
+}
+
+.trim-collage {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr); 
+    grid-gap: 0;
+}
+
+.trim-item {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    display: block;
+}
+
+.trim-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.trim-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    transition: opacity 0.3s ease;
+    text-align: center;
+}
+
+.trim-item:hover .trim-overlay {
+    opacity: 1;
+}
+
+.trim-info h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.trim-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Define different sizes for the collage effect */
+.trim-large {
+    grid-column: span 7;
+    grid-row: span 5;
+}
+
+.trim-medium {
+    grid-column: span 5;
+    grid-row: span 3;
+}
+
+.trim-small {
+    grid-column: span 5;
+    grid-row: span 4;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .trim-collage {
+        grid-template-columns: repeat(6, 1fr); /* Collapse to a smaller grid for mobile */
+    }
+
+    .trim-large {
+        grid-column: span 6;
+        grid-row: span 4;
+    }
+
+    .trim-medium {
+        grid-column: span 3;
+        grid-row: span 2;
+    }
+
+    .trim-small {
+        grid-column: span 3;
+        grid-row: span 2;
+    }
+}
+
+/* Reviews Section */
+.reviews-section {
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.center-container {
+    width: 100%;
+    max-width: 1200px; 
+    margin: 0 auto;
+    text-align: center;
+}
+
+.reviews-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #1d1d1d;
+    text-transform: uppercase;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.stars {
+    display: flex;
+    gap: 0.125rem;
+    color: rgb(238, 203, 8);
+}
+
+.star {
+    height: 1.25rem;
+    width: 1.25rem;
+}
+
+.infos {
+    margin-top: 1rem;
+}
+
+.date-time {
+    color: #0072bb;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.description {
+    margin-top: 0.4rem;
+    line-height: 1.625;
+    color: rgba(107, 114, 128, 1);
+}
+
+.author {
+    margin-top: 1.3rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    color: rgba(107, 114, 128, 1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .card {
+        margin-bottom: 20px;
+    }
+
+    .reviews-section {
+        padding: 30px 20px;
+    }
+
+    .center-container {
+        width: 100%;
+        padding: 0 10px;
+    }
+}
+
+/* Financing Section */
+.financing-section {
+    padding: 40px 0;
+    width: 90%;
+}
+
+.financing-section h2 {
+    font-size: 2.5em;
+    color: #1d1d1d;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+.financing-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.financing-card {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    border: none;
+}
+
+.financing-card-content {
+    text-align: center;
+}
+
+.financing-card h3 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.financing-card p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.financing-card .btn {
+    background-color: #0072bb;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    text-transform: uppercase;
+    color: white;
+}
+
+.financing-card .btn:hover {
+    background-color: #005ea2;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .financing-card {
+        height: 300px;
+    }
+    .financing-card-content h3 {
+        font-size: 1.4em;
+    }
+    .financing-card-content p {
+        font-size: 1em;
+    }
+}
+
+
+/* Footer Styles */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 16px;
+}
